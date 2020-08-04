@@ -1,62 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Project Starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylesheets/main.css" />
+  </head>
+  <body>
+    <!--  Your HTML goes here-->
+    <nav
+      class="navbar has-background-primary"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <h1 class="has-text-warning">Western Expeditions</h1>
+        </a>
 
-<head>
-  <meta charset="utf-8">
-  <title>Project Starter</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="stylesheets/main.css">
-</head>
-<body>
-  <!--  Your HTML goes here-->
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
-        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-      </a>
-  
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-  
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            Trips
-          </a>
-  
-          <div class="navbar-dropdown">
-            <a class="navbar-item">
-              About
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link has-text-warning">
+              Trips
             </a>
-            <a class="navbar-item">
-              Jobs
-            </a>
-            <a class="navbar-item">
-              Contact
-            </a>
-            <hr class="navbar-divider">
-            <a class="navbar-item">
-              Report an issue
-            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                Washington State
+              </a>
+              <a class="navbar-item">
+                California
+              </a>
+              <a class="navbar-item">
+                Utah
+              </a>
+            </div>
           </div>
+          <a class="navbar-item has-text-warning">
+            Gear
+          </a>
+          <a class="navbar-item has-text-warning">
+            Blog
+          </a>
         </div>
-        <a class="navbar-item">
-          Gear
-        </a>
-  
-        <a class="navbar-item">
-          Blog
-        </a>
-  
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-fluid">
+          <div id="hero-title">
+            <h1 class="title has-text-light">
+              "Because it's there."
+            </h1>
+            <h2 class="subtitle has-text-light">
+              -George Mallory
+            </h2>
+          </div>
+          <img class="img" src="images/homehero.jpg" alt="homehero.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="container is-fluid">
+        <h1 class="title has-text-centered has-text-primary">
+          Welcome to Western Expeditions
+        </h1>
+        <h2 class="subtitle has-text-primary">
+          At Western Expeditions, we’ve spend decades climbing, hiking, and
+          enjoying the western United States. The purpose of our website is to
+          provide comprehensive guides and information about our favorite
+          expeditions. From glacier covered Mt Rainier, to the deep recesses of
+          the Grand Canyon, we have you covered. Visit our Gear page as well for
+          suggestion on the best backpack, boot, or tent that fits your needs!
+        </h2>
+      </div>
+    </section>
+
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <article class="message is-primary">
+          <div class="message-header">
+            <p>Trips</p>
+          </div>
+          <div class="message-body columns">
+            <div class="column">
+              <img class="image" src="images/mtshasta.jpg" />
+            </div>
+
+            <div class="column has-text-centered is-vertical-center">
+              <div>
+                <p>
+                  Don't fear, not all of our trips are multi-day excursions that
+                  require glacier traverse. We've included some of our favorite
+                  overnight hikes from each respective state if you're not
+                  looking to scratch that adrenaline itch this time around.
+                </p>
+                <br />
+                <button class="button is-link">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
-  </nav>
 
-  <script src="javascripts/main.js"></script>
-</body>
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <article class="message is-success">
+          <div class="message-header">
+            <p class="has-text-centered">Gear Suggestions</p>
+          </div>
+          <div class="message-body columns">
+            <div class="column has-text-centered is-vertical-center">
+              <div>
+                <p>
+                  Need equipment for your first mountaineering adventure and not
+                  sure where to start? Our top gear recommendations have you
+                  covered. Conversely, if you're an experienced mountain man and
+                  know what you are looking for, we search for the best deals
+                  from major online retailers as well.
+                </p>
+                <br />
+                <button class="button is-link">Get Gear</button>
+              </div>
+            </div>
+            <div class="column">
+              <img class="image" src="images/carabiner.jpg" />
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container columns">
+        <div class="column is-5">
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="e.g Alex Smith" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input
+                class="input"
+                type="email"
+                placeholder="e.g. alexsmith@gmail.com"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="column is-5 has-text-centered">
+          Contact Us: <br />
+          A: 1069 S Steward Dr, Ogden UT 84404 <br />
+          E: info@westernexpeditions.com <br />
+          P: 801-888-2022
+        </div>
+      </div>
+    </footer>
+
+    <script src="javascripts/main.js"></script>
+  </body>
 </html>

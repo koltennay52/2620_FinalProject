@@ -1,11 +1,49 @@
 // Your styles go here
 
-/*
-Potential Custom Styles? 
-$primary: #316879;
-$link: #f47a60;
-$info: #7fe7dc;
+$primary: #120E21;
+$link: #635898;
+$info: #917BC8;
+$success: #BAA2E3;
+$warning:#A294BB;
+$navbar-breakpoint: 610px;
+
 $footer-background-color: $info;
-*/ 
+$navbar-item-hover-background-color: $success;
+
+
+
 
 @import "~bulma/bulma";
+
+#hero-title{
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.is-vertical-center {
+    display: flex;
+    align-items: center;
+  }
+  
+
+// Small devices 
+@media (max-width: 610px) { 
+  .hero-body  {
+      h1 {
+        font-size: 1.5rem;
+
+      }
+      h2 {
+          font-size: 1rem;
+      }
+     
+  }
+    
+ }
+
+// Large devices 
+@media (max-width: 992px) { 
+    
+ }
