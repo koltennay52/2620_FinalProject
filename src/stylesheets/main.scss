@@ -28,6 +28,40 @@ position: absolute;
   }
   
 
+  #tab-content p {
+    display: none;
+  }
+  
+  #tab-content p.is-active {
+    display: block;
+  }
+
+    .rounded {
+    border-radius: 10px;
+
+    div {
+      h4 {
+        color: $warning;
+      }
+      p {
+        color: $warning;
+      }
+    }
+  }
+
+.hero {
+  padding: 2rem;
+
+}
+
+.img-center {
+  display: block;
+  margin: auto;
+}
+
+.spacer {
+  margin: 2rem;
+}
 // Small devices 
 @media (max-width: 610px) { 
   .hero-body  {
@@ -45,5 +79,9 @@ position: absolute;
 
 // Large devices 
 @media (max-width: 992px) { 
-    
+    .rounded {
+      margin-top: 0.5rem;
+    }
  }
+
+
