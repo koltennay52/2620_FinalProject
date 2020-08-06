@@ -15,6 +15,15 @@ $navbar-item-hover-background-color: $success;
 
 @import "~bulma/bulma";
 
+
+.fa {
+  color: white;
+}
+
+.icon-container {
+  
+}
+
 #hero-title{
 position: absolute;
   top: 50%;
@@ -30,13 +39,11 @@ position: absolute;
 
   #tab-content p {
     display: none;
+
+    .is-active {
+      display: block;
   }
   
-  #tab-content p.is-active {
-    display: block;
-  }
-
-
 
     .rounded {
     border-radius: 10px;
@@ -67,6 +74,19 @@ position: absolute;
   margin: auto;
 }
 
+.gear-img {
+  width: 250px; /*set the width or max-width*/
+  height: 300px; /*this makes sure to maintain the aspect ratio*/
+
+}
+
+
+
+.gear-list {
+  text-align: left;
+
+}
+
 .spacer {
   margin: 2rem;
 }
@@ -93,3 +113,4 @@ position: absolute;
  }
 
 
+  }
