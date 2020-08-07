@@ -1,116 +1,139 @@
 // Your styles go here
 
-$primary: #120E21;
+$primary: #120e21;
 $link: #635898;
-$info: #917BC8;
-$success: #BAA2E3;
-$warning:#A294BB;
+$info: #917bc8;
+$success: #baa2e3;
+$warning: #a294bb;
+$spacer: 2rem;
 $navbar-breakpoint: 610px;
-
+$rounded-corners: 10px;
 $footer-background-color: $info;
 $navbar-item-hover-background-color: $success;
-
-
-
+@mixin center-image {
+  display: block;
+  margin: auto;
+}
 
 @import "~bulma/bulma";
 
+.rounded {
+  border-radius: $rounded-corners;
+
+  div {
+    h4 {
+      color: $warning;
+    }
+    p {
+      color: $warning;
+    }
+  }
+}
+
+.rounded-light {
+  border-radius: $rounded-corners;
+
+  div {
+    h4 {
+      color: $primary;
+    }
+    p {
+      color: $primary;
+    }
+  }
+}
+
 
 .fa {
-  color: white;
+  color: $link;
+  font-size: 30px;
 }
 
 .icon-container {
-  
+  text-align: center;
 }
 
-#hero-title{
-position: absolute;
+.img-center {
+  @include center-image();
+}
+
+#hero-title {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .is-vertical-center {
-    display: flex;
-    align-items: center;
-  }
-  
-
-  #tab-content p {
-    display: none;
-
-    .is-active {
-      display: block;
-  }
-  
-
-    .rounded {
-    border-radius: 10px;
-
-    div {
-      h4 {
-        color: $warning;
-      }
-      p {
-        color: $warning;
-      }
-    }
-  }
-
-.hero {
-  padding: 2rem;
-
+  display: flex;
+  align-items: center;
 }
 
-.card-image {
-  padding: 2rem;
 
   
-}
+  .hero {
+    padding: $spacer
+  }
 
-.img-center {
-  display: block;
-  margin: auto;
-}
+  .card-image {
+    padding: $spacer
+  }
 
-.gear-img {
-  width: 250px; /*set the width or max-width*/
-  height: 300px; /*this makes sure to maintain the aspect ratio*/
+  .gear-img {
+    width: 250px; /*set the width or max-width*/
+    height: 300px; /*this makes sure to maintain the aspect ratio*/
+  }
 
-}
+  .is-flex {
+    flex-direction: column;
+    justify-content: center;
+  }
 
+  .gear-list {
+    text-align: left;
+  }
 
-
-.gear-list {
-  text-align: left;
-
-}
-
-.spacer {
-  margin: 2rem;
-}
-// Small devices 
-@media (max-width: 610px) { 
-  .hero-body  {
+  .spacer {
+    margin: $spacer
+  }
+  // Small devices
+  @media (max-width: 610px) {
+    .hero-body {
       h1 {
         font-size: 1.5rem;
-
       }
       h2 {
-          font-size: 1rem;
+        font-size: 1rem;
       }
-     
-  }
-    
- }
-
-// Large devices 
-@media (max-width: 992px) { 
-    .rounded {
-      margin-top: 0.5rem;
     }
- }
 
+    div {
+      article {
+        padding: $spacer;
+      }
+    }
 
+    .container {
+      padding: $spacer;
+    }
   }
+
+  // Large devices
+  @media (max-width: 992px) {
+    .rounded {
+      margin-top: $spacer
+    }
+    .rounded-light {
+      margin-top: $spacer
+    }
+
+    #tshirt {
+      width: 500px;
+      height: auto;
+      @include center-image()
+    }
+    .container {
+      padding: 1rem;
+    }
+  }
+
